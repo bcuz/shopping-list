@@ -9,17 +9,17 @@ module.exports = function(grunt){
       },
       // files:['site/**'],
       files:['*.html', '*.scss', '*.css', 'js/**'],
-      tasks:['sass']
-      // tasks:['sass', 'jshint']
+      // tasks:['sass']
+      tasks:['sass', 'jshint']
       // spawn: false
 
     },
 
-    // jshint: {
-    //   files: {
-    //     src: ['js/script.js']
-    //   },
-    // },
+    jshint: {
+      files: {
+        src: ['js/script.js']
+      },
+    },
 
      sass: {
       options: {
@@ -49,7 +49,7 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
   grunt.registerTask('server',[  'connect', 'watch']);
