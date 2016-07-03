@@ -1,4 +1,4 @@
-@import "grid";
+// @import "grid";
 
 /*
  * Hello!
@@ -15,6 +15,12 @@
  * Use the internet as a resource when you need information!
  * See notes below. ***
  */
+
+ section {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+ }
 
 .example-style1 {
  /*
