@@ -16,17 +16,25 @@
  * See notes below. ***
  */
 
+ $light-grey: #bababa;
+
  section {
   max-width: 940px;
   margin: 0 auto;
   text-align: center;
 
  a {
-  background-color: #bababa;
+  background-color: $light-grey;
   color: #000;
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
+ }
+
+ a:hover {
+  border: 1px solid #000;
+  background-color: #817e7e;
+  color: #fff;
  }
  }
 
