@@ -23,7 +23,7 @@
   margin: 0 auto;
   text-align: center;
 
- a {
+ .btn {
   background-color: $light-grey;
   color: #000;
   text-decoration: none;
@@ -31,7 +31,7 @@
   border-radius: 10px;
  }
 
- a:hover {
+ .btn:hover {
   border: 1px solid #000;
   background-color: #817e7e;
   color: #fff;
