@@ -32,7 +32,7 @@
   border-radius: 10px;
  }
 
- .btn:hover {
+ .btn:hover, .btn:focus {
   border: 1px solid #000;
   background-color: #817e7e;
   color: #fff;
