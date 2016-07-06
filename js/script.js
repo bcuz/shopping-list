@@ -16,7 +16,8 @@ $(function() {
 
   $(".list").on("click", "a", function() {
     $(this).parent().remove()
-  }).on("click", "input[type='checkbox']", function() {
+  })
+  .on("click", "input[type='checkbox']", function() {
   if($(this).is(":checked")) {
     $(this).next().css("text-decoration", "line-through")
   } else {
