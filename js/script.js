@@ -6,7 +6,7 @@ $(function() {
     if ($(".item").val().length === 0 ) {
       alert("Enter something yo")
     } else {
-      $(".list").append('<div><input type="checkbox" value="hi"><label>' + $(".item").val() + '</label></input><a href="#">Delete</a><br></div>')
+      $(".list").append('<div><input type="checkbox" value="hi"><label>' + $(".item").val() + '</label><a href="#">Delete</a><br></div>')
 
     }
 
