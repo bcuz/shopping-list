@@ -1,7 +1,10 @@
 $(function() {
 
   $(".btn").click(function() {
-    console.log("hi");
+
+    $(".list").append('<input type="checkbox" value="hi">' + $(".item").val() + '</input><br>')
   });
+
+
 
 });

@@ -20,7 +20,8 @@
 
  section {
   max-width: 940px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
  .btn {
@@ -36,6 +37,11 @@
   background-color: #817e7e;
   color: #fff;
  }
+ }
+
+ .list {
+  // text-align: left;
+  margin-top: 1em;
  }
 
 @media (min-width: 700px) {
