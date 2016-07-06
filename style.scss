@@ -44,13 +44,26 @@
   text-align: left;
   margin-top: 1em;
 
- }
-
  input[type="checkbox"] {
   display: inline-block;
   margin-top: 20px;
   margin-right: 10px;
  }
+
+  a {
+    margin-left: 1em;
+    text-decoration: none;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  a:hover {
+    background-color: #c9302c;
+  }
+ }
+
 
 @media (min-width: 700px) {
   .example-style1 {
