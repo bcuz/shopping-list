@@ -1,23 +1,25 @@
 $(function() {
-  $("input[type='text']").val("")
+  var item_added = $("input[type='text']");
+
+  item_added.val("")
 
   $(".btn").click(function() {
-    if ($("input[type='text']").val().length === 0 ) {
+    if (item_added.val().length === 0 ) {
       alert("Enter something yo")
     } else {
       $(".shopping-list").append('\
         <div>\
           <input type="checkbox">\
-          <label contenteditable="true">' + $("input[type='text']").val() + '</label>\
+          <label contenteditable="true">' + item_added.val() + '</label>\
           <a href="#">Delete</a><br>\
         </div>')
     }
 
-    $("input[type='text']").val("")
+    item_added.val("")
 
   });
 
-  $("input[type='text']").keyup(function(event){
+  item_added.keyup(function(event){
     if(event.keyCode == 13){
         $(".btn").click();
     }
