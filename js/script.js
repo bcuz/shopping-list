@@ -19,7 +19,7 @@ $(function() {
 
   });
 
-  item_added.keyup(function(event){
+  item_added.keydown(function(event){
     if(event.keyCode == 13){
         $(".btn").click();
     }
