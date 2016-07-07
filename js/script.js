@@ -1,7 +1,6 @@
 $(function() {
   $(".item").val("")
 
-
   $(".btn").click(function() {
     if ($(".item").val().length === 0 ) {
       alert("Enter something yo")
@@ -17,6 +16,12 @@ $(function() {
     $(".item").val("")
 
   });
+
+  $(".item").keyup(function(event){
+    if(event.keyCode == 13){
+        $(".btn").click();
+    }
+});
 
   $(".shopping-list").on("click", "a", function() {
     $(this).parent().remove()
