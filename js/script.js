@@ -6,7 +6,7 @@ $(function() {
     if ($(".item").val().length === 0 ) {
       alert("Enter something yo")
     } else {
-      $(".list").append('\
+      $(".shopping-list").append('\
         <div>\
           <input type="checkbox">\
           <label contenteditable="true">' + $(".item").val() + '</label>\
@@ -18,7 +18,7 @@ $(function() {
 
   });
 
-  $(".list").on("click", "a", function() {
+  $(".shopping-list").on("click", "a", function() {
     $(this).parent().remove()
   })
   .on("click", "input[type='checkbox']", function() {
