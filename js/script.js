@@ -3,7 +3,7 @@ $(function() {
 
   item_added.val("");
 
-  $(".btn").click(function() {
+  $("form").submit(function() {
     if (item_added.val().length === 0 ) {
       alert("Enter something yo");
     } else {
@@ -18,12 +18,6 @@ $(function() {
     item_added.val("");
 
   });
-
-  item_added.keydown(function(event){
-    if(event.keyCode == 13){
-        $(".btn").click();
-    }
-});
 
   $(".shopping-list").on("click", "a", function() {
     $(this).parent().remove();
