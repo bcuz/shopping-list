@@ -1,31 +1,38 @@
 $(function() {
-  $(".item").val("")
+  var item_added = $("input[type='text']");
 
+  item_added.val("");
 
   $(".btn").click(function() {
-    if ($(".item").val().length === 0 ) {
-      alert("Enter something yo")
+    if (item_added.val().length === 0 ) {
+      alert("Enter something yo");
     } else {
-      $(".list").append('<div><input type="checkbox" value="hi"><label contenteditable="true">' + $(".item").val() + '</label><a href="#">Delete</a><br></div>')
-
+      $(".shopping-list").append('\
+        <div>\
+          <input type="checkbox">\
+          <label contenteditable="true">' + item_added.val() + '</label>\
+          <a href="#">Delete</a><br>\
+        </div>');
     }
 
-    $(".item").val("")
+    item_added.val("");
 
   });
 
-  $(".list").on("click", "a", function() {
-    $(this).parent().remove()
+  item_added.keydown(function(event){
+    if(event.keyCode == 13){
+        $(".btn").click();
+    }
+});
+
+  $(".shopping-list").on("click", "a", function() {
+    $(this).parent().remove();
   })
   .on("click", "input[type='checkbox']", function() {
   if($(this).is(":checked")) {
-    $(this).next().css("text-decoration", "line-through")
+    $(this).next().css("text-decoration", "line-through");
   } else {
-    $(this).next().css("text-decoration", "none")
+    $(this).next().css("text-decoration", "none");
   }
-  })
-
-
-
-
+  });
 });
