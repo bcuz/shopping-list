@@ -29,22 +29,22 @@ section {
     background-color: #817e7e;
     color: #fff; }
 
-.list {
+.shopping-list {
   max-width: 240px;
   text-align: left;
   margin-top: 1em; }
-  .list input[type="checkbox"] {
+  .shopping-list input[type="checkbox"] {
     display: inline-block;
     margin-top: 20px;
     margin-right: 10px; }
-  .list a {
+  .shopping-list a {
     margin-left: 1em;
     text-decoration: none;
     background-color: #d9534f;
     color: #fff;
     padding: 5px;
     border-radius: 5px; }
-  .list a:hover {
+  .shopping-list a:hover {
     background-color: #c9302c; }
 
 @media (min-width: 700px) {
