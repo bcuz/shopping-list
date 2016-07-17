@@ -16,6 +16,7 @@ $(function() {
     }
 
     item_added.val("");
+    return false;
 
   });
 
