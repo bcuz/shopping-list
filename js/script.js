@@ -11,7 +11,7 @@ $(function() {
         <div>\
           <input type="checkbox">\
           <label contenteditable="true">' + item_added.val() + '</label>\
-          <a href="#">Delete</a><br>\
+          <a class="btn btn-danger" href="#">Delete</a><br>\
         </div>');
     }
 
