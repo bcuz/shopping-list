@@ -13,26 +13,46 @@
  * Use the internet as a resource when you need information!
  * See notes below. ***
  */
+h1 {
+  padding-top: 30px; }
+
+.form-control {
+  width: auto;
+  display: inline; }
+
+body {
+  background-color: white;
+  background-image: linear-gradient(90deg, rgba(200, 0, 0, 0.5) 50%, transparent 50%), linear-gradient(rgba(200, 0, 0, 0.5) 50%, transparent 50%);
+  background-size: 50px 50px; }
+
 section {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-  section .btn {
-    background-color: #bababa;
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px; }
-  section .btn:hover, section .btn:focus {
-    border: 1px solid #000;
-    background-color: #817e7e;
-    color: #fff; }
+  margin-top: 50px;
+  max-width: 840px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 50px; }
+
+@media screen and (min-width: 700px) {
+  /* remember to change max/min 1024 */
+  section {
+    height: 500px; } }
+
+@media screen and (min-width: 1024px) {
+  /* remember to change max/min 1024 */
+  section {
+    margin-left: auto;
+    margin-right: auto; } }
+
+label {
+  font-weight: 500; }
 
 .shopping-list {
   margin-left: auto;
   margin-right: auto;
-  max-width: 240px;
+  max-width: 275px;
   text-align: left;
   margin-top: 1em; }
   .shopping-list input[type="checkbox"] {
@@ -41,34 +61,6 @@ section {
     margin-right: 10px; }
   .shopping-list a {
     margin-left: 1em;
-    text-decoration: none;
-    background-color: #d9534f;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px; }
-  .shopping-list a:hover {
-    background-color: #c9302c; }
-
-@media (min-width: 700px) {
-  .example-style1 {
-    /*
-     * Styles for tablet size and larger here.
-     * Here is where you would overwrite any base styles that you want to change
-     * for this breakpoint.
-     * Base styles are inherited here so no need to repeat formerly defined base
-     * properties that will remain unchanged.
-     * Write these styles 2nd.
-     */ } }
-
-@media (min-width: 1024px) {
-  .example-style1 {
-    /*
-     * Styles for desktop size and larger here.
-     * Here is where you would overwrite your base and tablet-size styles
-     * that you want to change for this breakpoint.
-     * Base styles and your 700px breakpoint styles (your tablet styles) are inherited
-     * here so no need to repeat formerly defined properties that will remain unchanged.
-     * Write these styles 3rd.
-     */ } }
+    padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */
