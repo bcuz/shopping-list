@@ -16,14 +16,28 @@
  * See notes below. ***
  */
 
+
  $light-grey: #bababa;
 
+ h1 {
+  padding-top: 30px;
+ }
+
+body {
+  background-color:white;
+background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+background-size:50px 50px;
+}
  section {
+  margin-top: 50px;
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
+  height: 500px;
+  background-color: #fff;
+  border-radius: 50px;
  }
 
  label {
