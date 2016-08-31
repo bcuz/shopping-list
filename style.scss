@@ -34,6 +34,7 @@ background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
 linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
 background-size:50px 50px;
 }
+
 section {
 margin-top: 50px;
 max-width: 840px;
@@ -44,7 +45,6 @@ height: 350px;
 background-color: #fff;
 border-radius: 50px;
 }
-
 
 @media screen and (min-width: 700px) {
   /* remember to change max/min 1024 */
