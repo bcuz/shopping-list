@@ -23,11 +23,6 @@ h1 {
   padding-top: 30px;
 }
 
-.form-control {
-  width: auto;
-  display: inline;
-}
-
 body {
   background-color:white;
   background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
@@ -48,6 +43,12 @@ section {
 
 @media screen and (min-width: 700px) {
   /* remember to change max/min 1024 */
+
+  .form-control {
+  width: auto;
+  display: inline;
+}
+
   section {
     height: 500px;
   }
