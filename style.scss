@@ -24,8 +24,8 @@ h1 {
 }
 
 .form-control {
-  width: auto;
   display: inline;
+  width: 130px;
 }
 
 body {
@@ -36,6 +36,7 @@ body {
 }
 
 section {
+  padding: 0 20px;
   margin-top: 50px;
   max-width: 350px;
   margin-left: 15px;
@@ -48,13 +49,18 @@ section {
 
 @media screen and (min-width: 700px) {
   /* remember to change max/min 1024 */
+
+  .form-control {
+  width: auto;
+}
+
   section {
     height: 500px;
   }
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 700px) {
   /* remember to change max/min 1024 */
   section {
     margin-left: auto;
